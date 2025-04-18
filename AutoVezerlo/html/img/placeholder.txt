@@ -1,0 +1,2 @@
+Ez a fájl csak azért van itt, hogy létrehozza az img mappát. 
+Ha szeretnéd, helyezz el itt egyéni képeket az ikonokhoz vagy háttérként. 

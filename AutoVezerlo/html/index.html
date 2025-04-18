@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autóvezérlő</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="autovezerlo-container">
+        <div class="control-panel">
+            <div class="header">
+                <div class="logo-container">
+                    <span class="logo">NewReality RolePlay V2</span>
+                    <span class="subtitle">Jármű Vezérlő</span>
+                </div>
+                <button id="close-button"><i class="fas fa-times"></i></button>
+            </div>
+            
+            <div class="panels-container">
+                <div class="left-panel">
+                    <div class="vehicle-info">
+                        <div class="info-card fuel-card">
+                            <div class="info-icon">
+                                <i class="fas fa-gas-pump"></i>
+                            </div>
+                            <div class="info-data">
+                                <span class="info-label">Üzemanyag</span>
+                                <div class="progress-container">
+                                    <div class="progress-bar">
+                                        <div id="fuel-level" class="progress-fill"></div>
+                                    </div>
+                                    <span id="fuel-percentage">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-power-off"></i>
+                            </div>
+                            <div class="info-data">
+                                <span class="info-label">Motor</span>
+                                <span id="engine-status" class="status-indicator">Kikapcsolva</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="info-data">
+                                <span class="info-label">Lámpák</span>
+                                <span id="lights-status" class="status-indicator">Kikapcsolva</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="control-section">
+                        <h2><i class="fas fa-cogs"></i> Vezérlők</h2>
+                        <div class="main-controls">
+                            <button id="toggle-engine" class="control-button large">
+                                <i class="fas fa-power-off"></i>
+                                <span>Motor</span>
+                            </button>
+                            <button id="toggle-lights" class="control-button large">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Lámpák</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="right-panel">
+                    <div class="control-section">
+                        <h2><i class="fas fa-door-open"></i> Ajtók</h2>
+                        <div class="doors-grid controls-grid">
+                            <button id="toggle-door-0" class="control-button door-button" data-door="0">
+                                <i class="fas fa-door-open"></i>
+                                <span>Bal Első</span>
+                            </button>
+                            <button id="toggle-door-1" class="control-button door-button" data-door="1">
+                                <i class="fas fa-door-open"></i>
+                                <span>Jobb Első</span>
+                            </button>
+                            <button id="toggle-door-2" class="control-button door-button" data-door="2">
+                                <i class="fas fa-door-open"></i>
+                                <span>Bal Hátsó</span>
+                            </button>
+                            <button id="toggle-door-3" class="control-button door-button" data-door="3">
+                                <i class="fas fa-door-open"></i>
+                                <span>Jobb Hátsó</span>
+                            </button>
+                            <button id="toggle-door-4" class="control-button door-button" data-door="4">
+                                <i class="fas fa-car"></i>
+                                <span>Motorháztető</span>
+                            </button>
+                            <button id="toggle-door-5" class="control-button door-button" data-door="5">
+                                <i class="fas fa-truck-loading"></i>
+                                <span>Csomagtér</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="control-section">
+                        <h2><i class="fas fa-window-maximize"></i> Ablakok</h2>
+                        <div class="windows-grid controls-grid">
+                            <button id="toggle-window-0" class="control-button window-button" data-window="0">
+                                <i class="fas fa-window-maximize"></i>
+                                <span>Bal Első</span>
+                            </button>
+                            <button id="toggle-window-1" class="control-button window-button" data-window="1">
+                                <i class="fas fa-window-maximize"></i>
+                                <span>Jobb Első</span>
+                            </button>
+                            <button id="toggle-window-2" class="control-button window-button" data-window="2">
+                                <i class="fas fa-window-maximize"></i>
+                                <span>Bal Hátsó</span>
+                            </button>
+                            <button id="toggle-window-3" class="control-button window-button" data-window="3">
+                                <i class="fas fa-window-maximize"></i>
+                                <span>Jobb Hátsó</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <span>redFLEG RP © 2025</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
